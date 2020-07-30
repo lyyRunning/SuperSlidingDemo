@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.king.view.superslidingpanelayout.SuperSlidingPaneLayout
+    android:id="@+id/sspl"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg"
+    app:mode="default_"
+    app:compat_sliding="false">
+    <include layout="@layout/menu_layout"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/top_title_bar"/>
+        <Button
+            android:id="@+id/tvMode"
+            android:layout_marginTop="200dp"
+            android:layout_width="200dp"
+            android:layout_marginLeft="100dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:text="选择切换的类型"
+            android:textSize="24sp"/>
+    </LinearLayout>
+</com.king.view.superslidingpanelayout.SuperSlidingPaneLayout>
